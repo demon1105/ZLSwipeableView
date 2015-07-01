@@ -157,6 +157,9 @@ ZLDirectionVectorToSwipeableViewDirection(CGVector directionVector) {
 - (void)animateSwipeableViewsIfNeeded {
     UIView *topSwipeableView = [self topSwipeableView];
     if (!topSwipeableView) {
+        if ([self.delegate respondsToSelector:@selector(swipeTheLastViewToDismiss)]) {
+            [self.delegate swipeTheLastViewToDismiss];
+        }
         return;
     }
 

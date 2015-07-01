@@ -47,6 +47,7 @@ typedef NS_ENUM(NSUInteger, ZLSwipeableViewDirection) {
     didEndSwipingView:(UIView *)view
            atLocation:(CGPoint)location;
 
+- (void)swipeTheLastViewToDismiss;
 @end
 
 // DataSource
