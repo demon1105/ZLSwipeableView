@@ -47,7 +47,7 @@ ZLDirectionVectorToSwipeableViewDirection(CGVector directionVector) {
 @property (nonatomic) BOOL isAnchorViewVisible;
 // ContainerView
 @property (strong, nonatomic) UIView *reuseCoverContainerView;
-@property (strong, nonatomic) UIView *containerView;
+@property (strong, readwrite,nonatomic) UIView *containerView;
 
 @end
 

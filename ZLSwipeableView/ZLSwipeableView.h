@@ -59,6 +59,8 @@ typedef NS_ENUM(NSUInteger, ZLSwipeableViewDirection) {
 
 @interface ZLSwipeableView : UIView
 
+@property (strong, readonly,nonatomic) UIView *containerView;
+///
 @property (nonatomic, weak) IBOutlet id<ZLSwipeableViewDataSource> dataSource;
 @property (nonatomic, weak) IBOutlet id<ZLSwipeableViewDelegate> delegate;
 
